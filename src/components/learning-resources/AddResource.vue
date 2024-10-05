@@ -49,6 +49,9 @@ export default {
             }
 
             this.addResource(enteredTitle, enteredDesc, enteredLink);
+            this.$refs.titleInput.value = '';
+            this.$refs.descInput.value = '';
+            this.$refs.linkInput.value = '';
         },
         confirmError() {
             this.inputIsInvalid = false;
